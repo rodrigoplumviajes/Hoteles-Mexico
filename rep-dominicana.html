@@ -3,123 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>República Dominicana - Hoteles</title>
+    <title>República Dominicana - Destinos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
         .container {
-            max-width: 1200px;
-            margin: 20px auto;
+            width: 80%;
+            margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
             text-align: center;
-            color: #2c3e50;
+            color: #333;
+        }
+        .destinos {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
         }
         .destino {
-            margin: 20px 0;
-        }
-        .destino h2 {
-            color: #3498db;
-        }
-        .hoteles {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        .hotel {
-            border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 5px;
-            background-color: #ecf0f1;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
             width: 30%;
             text-align: center;
-            box-sizing: border-box;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
-        .hotel img {
-            max-width: 100%;
-            border-radius: 5px;
+        .destino img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
         }
-        .hotel h3 {
-            margin: 10px 0;
+        .destino h2 {
+            color: #333;
+            font-size: 24px;
+            margin-top: 15px;
         }
-        .hotel p {
-            font-size: 0.9em;
-            color: #7f8c8d;
+        .hotel {
+            margin-top: 10px;
+        }
+        .hotel ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .hotel li {
+            font-size: 18px;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            .destino {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>República Dominicana - Hoteles</h1>
-        
-        <div class="destino">
-            <h2>Punta Cana</h2>
-            <div class="hoteles">
+        <h1>República Dominicana - Destinos</h1>
+        <div class="destinos">
+            <!-- Destino: Punta Cana -->
+            <div class="destino">
+                <img src="https://example.com/punta-cana.jpg" alt="Punta Cana">
+                <h2>Punta Cana</h2>
                 <div class="hotel">
-                    <img src="hotel1.jpg" alt="Hotel Punta Cana 1">
-                    <h3>Hotel Punta Cana 1</h3>
-                    <p>Todo incluido, piscina, acceso directo a la playa.</p>
-                </div>
-                <div class="hotel">
-                    <img src="hotel2.jpg" alt="Hotel Punta Cana 2">
-                    <h3>Hotel Punta Cana 2</h3>
-                    <p>Ubicación frente al mar, actividades para toda la familia.</p>
-                </div>
-                <div class="hotel">
-                    <img src="hotel3.jpg" alt="Hotel Punta Cana 3">
-                    <h3>Hotel Punta Cana 3</h3>
-                    <p>Resort de lujo, spa y restaurante gourmet.</p>
+                    <h3>Opciones de Hoteles:</h3>
+                    <ul>
+                        <li>Hotel Bávaro Beach</li>
+                        <li>Hotel Punta Cana Palace</li>
+                        <li>Hotel Royalton Punta Cana</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        
-        <div class="destino">
-            <h2>Bayahibe</h2>
-            <div class="hoteles">
+            <!-- Destino: Bayahibe -->
+            <div class="destino">
+                <img src="https://example.com/bayahibe.jpg" alt="Bayahibe">
+                <h2>Bayahibe</h2>
                 <div class="hotel">
-                    <img src="hotel4.jpg" alt="Hotel Bayahibe 1">
-                    <h3>Hotel Bayahibe 1</h3>
-                    <p>Frente a la playa, actividades acuáticas.</p>
-                </div>
-                <div class="hotel">
-                    <img src="hotel5.jpg" alt="Hotel Bayahibe 2">
-                    <h3>Hotel Bayahibe 2</h3>
-                    <p>Excelente ubicación, todo incluido.</p>
-                </div>
-                <div class="hotel">
-                    <img src="hotel6.jpg" alt="Hotel Bayahibe 3">
-                    <h3>Hotel Bayahibe 3</h3>
-                    <p>Relax total, con vistas al mar Caribe.</p>
+                    <h3>Opciones de Hoteles:</h3>
+                    <ul>
+                        <li>Hotel Bayahibe Beach</li>
+                        <li>Hotel Viva Wyndham</li>
+                        <li>Hotel Dominicus</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-
-        <div class="destino">
-            <h2>Miches</h2>
-            <div class="hoteles">
+            <!-- Destino: Miches -->
+            <div class="destino">
+                <img src="https://example.com/miches.jpg" alt="Miches">
+                <h2>Miches</h2>
                 <div class="hotel">
-                    <img src="hotel7.jpg" alt="Hotel Miches 1">
-                    <h3>Hotel Miches 1</h3>
-                    <p>Resort eco-friendly, perfecto para una escapada tranquila.</p>
-                </div>
-                <div class="hotel">
-                    <img src="hotel8.jpg" alt="Hotel Miches 2">
-                    <h3>Hotel Miches 2</h3>
-                    <p>Villas privadas, ideal para lunas de miel.</p>
-                </div>
-                <div class="hotel">
-                    <img src="hotel9.jpg" alt="Hotel Miches 3">
-                    <h3>Hotel Miches 3</h3>
-                    <p>Ubicación cerca de la naturaleza, relajación garantizada.</p>
+                    <h3>Opciones de Hoteles:</h3>
+                    <ul>
+                        <li>Hotel Miches Beach</li>
+                        <li>Hotel El Seibo</li>
+                        <li>Hotel Caribe</li>
+                    </ul>
                 </div>
             </div>
         </div>
