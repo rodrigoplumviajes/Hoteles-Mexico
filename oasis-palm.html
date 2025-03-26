@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oasis Palm - Plum Viajes</title>
+    <title>Oasis Palm</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,63 +19,58 @@
         h1 {
             text-align: center;
             color: #333;
-        }
-        .hotel-details {
-            background-color: #ffffff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .hotel-details img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        .hotel-details h3 {
-            color: #333;
-            margin-top: 10px;
-        }
-        .hotel-details p {
-            color: #777;
-        }
-        .back-button {
-            background-color: #3e8e41;
-            color: white;
+            background-color: #007bff;
             padding: 10px;
-            border: none;
+            color: white;
             border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             margin-top: 20px;
         }
-        .back-button:hover {
-            background-color: #45a049;
+        .images img {
+            width: 30%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .description {
+            margin-top: 30px;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .card {
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Oasis Palm - Información del Hotel</h1>
+        <h1>Oasis Palm</h1>
 
-        <div class="hotel-details">
-            <img src="oasis-palm.jpg" alt="Oasis Palm">
-            <h3>Oasis Palm</h3>
-            <p>Oasis Palm es un resort familiar ubicado en la zona hotelera de Cancún, con una variedad de servicios todo incluido para disfrutar en familia.</p>
-            <p><strong>Servicios:</strong></p>
-            <ul>
-                <li>Restaurantes y bares</li>
-                <li>Piscina y jacuzzi</li>
-                <li>Actividades deportivas</li>
-                <li>Acceso directo a la playa</li>
-            </ul>
-            <p><strong>Ubicación:</strong> Zona Hotelera, Cancún, México</p>
-            <p><strong>Precio promedio por noche:</strong> $150 USD</p>
+        <div class="card">
+            <h3>Imágenes del Hotel</h3>
+            <div class="images">
+                <!-- Fila 1 -->
+                <img src="oasis1.jpg" alt="Oasis Palm 1">
+                <img src="oasis2.jpg" alt="Oasis Palm 2">
+                <img src="oasis3.jpg" alt="Oasis Palm 3">
+                
+                <!-- Fila 2 -->
+                <img src="oasis4.jpg" alt="Oasis Palm 4">
+                <img src="oasis5.jpg" alt="Oasis Palm 5">
+                <img src="oasis6.jpg" alt="Oasis Palm 6">
+            </div>
         </div>
 
-        <a href="cancun.html" class="back-button">Volver a la lista de hoteles</a>
+        <div class="description">
+            <h3>Descripción:</h3>
+            <p>El Oasis Palm es un resort familiar ubicado en la costa de Cancún, ideal para aquellos que buscan unas vacaciones relajantes y llenas de diversión. Con una amplia gama de servicios, incluyendo piscinas, restaurantes de alta calidad y un spa exclusivo, Oasis Palm ofrece la combinación perfecta de descanso y entretenimiento. Disfruta de sus instalaciones modernas y su excelente ubicación, cerca de las principales atracciones de Cancún.</p>
+        </div>
     </div>
 
 </body>
