@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plum Viajes - Hoteles por destino</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+        .card {
+            background-color: #007BFF; /* Azul de fondo */
+            padding: 20px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            color: white; /* Color del texto del título en cada tarjeta */
+            font-family: 'Arial', sans-serif;
+        }
+        .accordion {
+            background-color: #3e8e41;
+            color: white;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .accordion:hover {
+            background-color: #45a049;
+        }
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: #f1f1f1;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .panel a {
+            display: block;
+            padding: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+        .panel a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Plum Viajes - Hoteles por destino</h1>
+
+        <!-- México -->
+        <div class="card">
+            <button class="accordion">México</button>
+            <div class="panel">
+                <a href="cancun.html">Cancún</a>
+                <a href="playa-del-carmen.html">Playa del Carmen</a>
+                <a href="tulum.html">Tulum</a>
+                <a href="isla-mujeres.html">Isla Mujeres</a>
+                <a href="costa-mujeres.html">Costa Mujeres</a>
+                <a href="isla-holbox.html">Isla Holbox</a>
+            </div>
+        </div>
+
+        <!-- República Dominicana -->
+        <div class="card">
+            <button class="accordion">República Dominicana</button>
+            <div class="panel">
+                <a href="punta-cana.html">Punta Cana</a>
+                <a href="bayahibe.html">Bayahibe</a>
+                <a href="miches.html">Miches</a>
+            </div>
+        </div>
+
+        <!-- Aruba -->
+        <div class="card">
+            <button class="accordion">Aruba</button>
+            <div class="panel">
+                <a href="aruba.html">Aruba</a>
+            </div>
+        </div>
+
+        <!-- Brasil -->
+        <div class="card">
+            <button class="accordion">Brasil</button>
+            <div class="panel">
+                <a href="rio-de-janeiro.html">Rio de Janeiro</a>
+                <a href="buzios.html">Buzios</a>
+                <a href="arraial-do-cabo.html">Arraial Do Cabo</a>
+                <a href="cabo-frio.html">Cabo Frio</a>
+            </div>
+        </div>
+
+        <!-- Estados Unidos -->
+        <div class="card">
+            <button class="accordion">Estados Unidos</button>
+            <div class="panel">
+                <a href="orlando.html">Orlando</a>
+                <a href="miami.html">Miami</a>
+                <a href="nueva-york.html">Nueva York</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Código para desplegar y ocultar el contenido de los desplegables (accordion)
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
