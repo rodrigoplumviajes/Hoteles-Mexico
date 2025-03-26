@@ -3,72 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plum Viajes - Selecciona tu destino</title>
+    <title>Plum Viajes - Destinos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
         }
         .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            width: 80%;
+            margin: 0 auto;
             padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
         }
         .card {
-            background-color: white;
-            border-radius: 10px;
-            margin: 10px;
+            background-color: #ffffff;
             padding: 20px;
-            width: 250px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .accordion {
+            background-color: #3e8e41;
+            color: white;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
             cursor: pointer;
-            transition: transform 0.3s ease;
+            border-radius: 10px;
+            margin: 10px 0;
         }
-        .card:hover {
-            transform: scale(1.05);
+        .accordion:hover {
+            background-color: #45a049;
         }
-        .card h3 {
-            margin-top: 0;
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: #f1f1f1;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .panel a {
+            display: block;
+            padding: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+        .panel a:hover {
+            background-color: #ddd;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Plum Viajes - Selecciona tu país</h1>
-</header>
+    <div class="container">
+        <h1>Plum Viajes - Destinos</h1>
 
-<div class="container">
-    <!-- Países -->
-    <div class="card" onclick="window.location.href='mexico.html'">
-        <h3>México</h3>
+        <!-- México -->
+        <div class="card">
+            <button class="accordion">México</button>
+            <div class="panel">
+                <a href="mexico.html">Cancún</a>
+                <a href="mexico.html">Playa del Carmen</a>
+                <a href="mexico.html">Tulum</a>
+                <a href="mexico.html">Isla Mujeres</a>
+                <a href="mexico.html">Costa Mujeres</a>
+                <a href="mexico.html">Isla Holbox</a>
+            </div>
+        </div>
+
+        <!-- República Dominicana -->
+        <div class="card">
+            <button class="accordion">República Dominicana</button>
+            <div class="panel">
+                <a href="rep-dominicana.html">Punta Cana</a>
+                <a href="rep-dominicana.html">Bayahibe</a>
+                <a href="rep-dominicana.html">Miches</a>
+            </div>
+        </div>
+
+        <!-- Aruba -->
+        <div class="card">
+            <button class="accordion">Aruba</button>
+            <div class="panel">
+                <a href="aruba.html">Aruba</a>
+            </div>
+        </div>
+
+        <!-- Brasil -->
+        <div class="card">
+            <button class="accordion">Brasil</button>
+            <div class="panel">
+                <a href="brasil.html">Rio de Janeiro</a>
+                <a href="brasil.html">Buzios</a>
+                <a href="brasil.html">Arraial Do Cabo</a>
+                <a href="brasil.html">Cabo Frio</a>
+            </div>
+        </div>
+
+        <!-- Estados Unidos -->
+        <div class="card">
+            <button class="accordion">Estados Unidos</button>
+            <div class="panel">
+                <a href="eeuu.html">Orlando</a>
+                <a href="eeuu.html">Miami</a>
+                <a href="eeuu.html">Nueva York</a>
+            </div>
+        </div>
+
     </div>
-    <div class="card" onclick="window.location.href='rep-dominicana.html'">
-        <h3>República Dominicana</h3>
-    </div>
-    <div class="card" onclick="window.location.href='aruba.html'">
-        <h3>Aruba</h3>
-    </div>
-    <div class="card" onclick="window.location.href='brasil.html'">
-        <h3>Brasil</h3>
-    </div>
-    <div class="card" onclick="window.location.href='eeuu.html'">
-        <h3>Estados Unidos</h3>
-    </div>
-</div>
+
+    <script>
+        // Código para desplegar y ocultar el contenido de los desplegables (accordion)
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
 
 </body>
 </html>
