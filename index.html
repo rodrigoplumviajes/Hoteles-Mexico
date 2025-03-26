@@ -31,195 +31,43 @@
             border-radius: 10px;
             margin: 10px;
             padding: 20px;
-            width: 300px;
+            width: 250px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
         }
         .card h3 {
             margin-top: 0;
-        }
-        .destino, .hotel {
-            margin-top: 10px;
-        }
-        .hotel-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        .hotel-list li {
-            background-color: #ecf0f1;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Plum Viajes - Selecciona tu destino</h1>
+    <h1>Plum Viajes - Selecciona tu país</h1>
 </header>
 
 <div class="container">
-    <!-- País 1: México -->
-    <div class="card">
+    <!-- Países -->
+    <div class="card" onclick="window.location.href='mexico.html'">
         <h3>México</h3>
-        <div class="destino">
-            <h4>Cancún</h4>
-            <ul class="hotel-list">
-                <li>Hotel Xcaret México</li>
-                <li>The Royal Sands</li>
-                <li>Cancún Palace</li>
-            </ul>
-        </div>
-        <div class="destino">
-            <h4>Playa del Carmen</h4>
-            <ul class="hotel-list">
-                <li>Hotel Riu Palace</li>
-                <li>Grand Hyatt Playa del Carmen</li>
-                <li>Playacar Palace</li>
-            </ul>
-        </div>
-        <div class="destino">
-            <h4>Tulum</h4>
-            <ul class="hotel-list">
-                <li>Azulik Tulum</li>
-                <li>Coqui Coqui Tulum</li>
-                <li>Nomade Tulum</li>
-            </ul>
-        </div>
-        <div class="destino">
-            <h4>Isla Mujeres</h4>
-            <ul class="hotel-list">
-                <li>Casa Blanca Boutique & Organic</li>
-                <li>Isla Mujeres Palace</li>
-                <li>Privilege Aluxes</li>
-            </ul>
-        </div>
-        <div class="destino">
-            <h4>Costa Mujeres</h4>
-            <ul class="hotel-list">
-                <li>The Excellence Playa Mujeres</li>
-                <li>Finest Playa Mujeres</li>
-                <li>Secrets Playa Mujeres</li>
-            </ul>
-        </div>
-        <div class="destino">
-            <h4>Isla Holbox</h4>
-            <ul class="hotel-list">
-                <li>Las Nubes de Holbox</li>
-                <li>Holbox Dream Beach Front</li>
-                <li>Villas HM Palapas del Mar</li>
-            </ul>
-        </div>
     </div>
-
-    <!-- País 2: República Dominicana -->
-    <div class="card">
+    <div class="card" onclick="window.location.href='rep-dominicana.html'">
         <h3>República Dominicana</h3>
-        <div class="destino">
-            <h4>Punta Cana</h4>
-            <ul class="hotel-list">
-                <li>Hard Rock Hotel Punta Cana</li>
-                <li>Bávaro Palace</li>
-                <li>Barceló Bávaro Beach</li>
-            </ul>
-        </div>
-        <div class="destino">
-            <h4>Bayahibe</h4>
-            <ul class="hotel-list">
-                <li>Dominicus Beach</li>
-                <li>Catalonia Bayahibe</li>
-                <li>Luxury Bahia Principe</li>
-            </ul>
-        </div>
-        <div class="destino">
-            <h4>Miches</h4>
-            <ul class="hotel-list">
-                <li>Club Med Miches</li>
-                <li>Hotel & Villas Playa Nuevo</li>
-                <li>Dominican Bay</li>
-            </ul>
-        </div>
     </div>
-
-    <!-- País 3: Aruba -->
-    <div class="card">
+    <div class="card" onclick="window.location.href='aruba.html'">
         <h3>Aruba</h3>
-        <div class="destino">
-            <ul class="hotel-list">
-                <li>Riu Palace Aruba</li>
-                <li>Divi Aruba All Inclusive</li>
-                <li>Aruba Marriott Resort</li>
-            </ul>
-        </div>
     </div>
-
-    <!-- País 4: Brasil -->
-    <div class="card">
+    <div class="card" onclick="window.location.href='brasil.html'">
         <h3>Brasil</h3>
-        <div class="destino">
-            <h4>Río de Janeiro</h4>
-            <ul class="hotel-list">
-                <li>Copacabana Palace</li>
-                <li>Belmond Hotel</li>
-                <li>Hotel Fasano Rio de Janeiro</li>
-            </ul>
-        </div>
-        <div class="destino">
-            <h4>Búzios</h4>
-            <ul class="hotel-list">
-                <li>Club Med Búzios</li>
-                <li>Pousada Byblos</li>
-                <li>Hotel Porto Bay Rio Internacional</li>
-            </ul>
-        </div>
-        <div class="destino">
-            <h4>Arraial Do Cabo</h4>
-            <ul class="hotel-list">
-                <li>Pousada Do Capitão</li>
-                <li>Pousada Maresia</li>
-                <li>Arraial do Cabo Praia Hotel</li>
-            </ul>
-        </div>
-        <div class="destino">
-            <h4>Cabo Frio</h4>
-            <ul class="hotel-list">
-                <li>Hotel Malibu</li>
-                <li>Pousada do Sol</li>
-                <li>Caravelas Praia Hotel</li>
-            </ul>
-        </div>
     </div>
-
-    <!-- País 5: Estados Unidos -->
-    <div class="card">
+    <div class="card" onclick="window.location.href='eeuu.html'">
         <h3>Estados Unidos</h3>
-        <div class="destino">
-            <h4>Orlando</h4>
-            <ul class="hotel-list">
-                <li>Walt Disney World Resort</li>
-                <li>Universal's Hard Rock Hotel</li>
-                <li>Four Seasons Resort Orlando</li>
-            </ul>
-        </div>
-        <div class="destino">
-            <h4>Miami</h4>
-            <ul class="hotel-list">
-                <li>Fontainebleau Miami Beach</li>
-                <li>The Ritz-Carlton Key Biscayne</li>
-                <li>Loews Miami Beach Hotel</li>
-            </ul>
-        </div>
-        <div class="destino">
-            <h4>Nueva York</h4>
-            <ul class="hotel-list">
-                <li>The Plaza Hotel</li>
-                <li>The St. Regis New York</li>
-                <li>Hotel Pennsylvania</li>
-            </ul>
-        </div>
     </div>
-
 </div>
 
 </body>
